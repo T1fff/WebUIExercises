@@ -2,7 +2,8 @@ let string = "www.codewars.com";
 let string1 = "www.starwiki.com";
 
 function ipValue(string) {
-  let result = 0;
+  if(string.length < 70 || string != " "){
+    let result = 0;
   let arr = [];
 
   for (i = 0 ; i < string.length ; i++) {
@@ -15,6 +16,10 @@ function ipValue(string) {
   }
 
   console.log(arr)
+  } else {
+    console.log("Review you string is too long o empty")
+  }
+  
 }
 
 ipValue(string)
