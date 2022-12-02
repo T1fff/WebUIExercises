@@ -2,10 +2,7 @@ function pascalTriangle(rows) {
     if (rows === 0){
       return [[1]];
     }      
-    if (rows === 1){
-      
-    }
-      
+          
     let result = [];
     for (let i = 1; i <= rows; i++) {
         let arr = [];
