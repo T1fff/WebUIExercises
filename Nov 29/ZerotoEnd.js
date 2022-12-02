@@ -1,7 +1,6 @@
 let array = [1,0,6,3,6,9,4,0,9]
 let array1 = [1,5,6,3,0,9,4,0,9,8,9]
 let Zeros = 0
-//console.log(arr.replace(/0/g,""))
 
 let numZero = (arr) => {
   let string = arr.sort().toString().trim().replace(/,/g,"")
