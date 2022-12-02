@@ -4,9 +4,9 @@ let string3 = "www.googlegooglegooglegooglegooglegooglegooogleoggogogoglelesoosl
 let string4 = "";
 
 function ipValue(str) {
-  if (str.length >= 70 || str.trim() === "") {
+  if (str.length >= 77 || str.trim() === "") {
     console.log("Check the link provided")
-  } else if(str.length < 70){
+  } else if(str.length < 77){
             let result = 0;
             let arr = [];
     
