@@ -14,7 +14,7 @@ let numZero = (arr) => {
   for (i = 0; i < Zeros; i++){
     string = string.concat("0")
   }
-   console.log(string)
+   console.log(string.split(""))
 }
 
 numZero(array)
