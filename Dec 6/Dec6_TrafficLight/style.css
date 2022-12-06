@@ -1,0 +1,45 @@
+.square {
+  width: 55%;
+  max-width: 200px;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.w-75 {
+  max-width: 300px;
+}
+
+.button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
+}
+
+.button:hover {
+  background-position: right center;
+}
+
+.button:active {
+  top: 2px;
+}
+
+@media (max-width: 1366px) {
+  .w-75 {
+    max-width: 150px;
+  }
+}
