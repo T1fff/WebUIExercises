@@ -18,7 +18,7 @@ const myMap = function(callback) {
 
 /*my Filter*/
 const myFilter = function(callback, filter){
-    var newArray = [];
+    let newArray = [];
     for(i = 0; i< this.length; i++){
         if(callback.call(context, this[i], i, this)){
             arr.push(this[i])
