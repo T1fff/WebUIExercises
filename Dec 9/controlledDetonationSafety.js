@@ -16,7 +16,7 @@ let example2 = [
 
 function locateExplotion(arr) {
 let safePlace = []
-  console.log(arr)
+
   for (let i = 0; i < arr.length; i++) {
     y = arr[i].indexOf("M")
     x = i
