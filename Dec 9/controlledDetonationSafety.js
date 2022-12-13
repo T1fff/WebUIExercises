@@ -61,7 +61,6 @@ let safePlace = []
       
     } 
   }
-console.log(arr)
   
 for (i = 0; i < arr.length; i++){
   for (j = 0; j < arr.length; j++){
@@ -76,5 +75,4 @@ for (i = 0; i < arr.length; i++){
 
 
 console.log(locateExplotion(example))
-console.log("OTRO ARRAY")
 console.log(locateExplotion(example2))
