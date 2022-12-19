@@ -35,11 +35,12 @@ const context2 = new Context(0 , 999999)
 
 
 const findingTicketType = (Context) => {
+    //Error handling
     if (Context == null || typeof Context != "object" || Object.getOwnPropertyNames(Context).toString() !==  "min,max") {
         errMessage = "{status: 'failed'"+ "\n" +" reason: 'You must enter a Context object with the min and max attributes'}"
         return errMessage
     }
-
+    //
     let totalSimple = 0, totalComplicated = 0, winningMethod = ""
     for (i = Context.min; i <= Context.max; i+=1) {
         let sumSimple1 = 0, sumSimple2 = 0, sumComplicated1 = 0, sumComplicated2 = 0

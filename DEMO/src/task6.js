@@ -4,10 +4,12 @@ Output: a string with a series of numbers */
 
 
 const seriesOfSquaredNumbers = function(n, m){
+    //Error handling
         if (typeof n !== "number" || typeof m !== "number" || n < 0 || m < 0) {
             errMessage = "{status: 'failed'"+ "\n" +" reason: 'You must enter positive numbers indicating the length of the series and the minimun square'}"
             return errMessage
         }
+    //
         let arr = []
             for (i = 0; i <= 1000000; i+=1){
             number = Math.pow(i,2)

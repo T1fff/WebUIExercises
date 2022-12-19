@@ -7,7 +7,7 @@
  Output: line with checkerboard representation */
 
 
-const drawChessboard = function(length, width){
+const drawChessboard = function(length, width, char){
         //Error handling
         if (typeof length !== "number" || typeof width !== "number") {
             errMessage = "{status: 'failed'"+ "\n" +" reason: 'You must enter numbers indicating height and width'}"
@@ -30,7 +30,7 @@ const drawChessboard = function(length, width){
             for(j = 0; j < width; j+=1) {
                 if (i % 2 == 0){
                     if (j % 2 == 0) {
-                        arr[i][j] = "*"; 
+                        arr[i][j] = char; 
                     } else {
                         arr[i][j] = " "
                     }
@@ -38,7 +38,7 @@ const drawChessboard = function(length, width){
                     if (j % 2 == 0) {
                         arr[i][j] = " "; 
                     } else {
-                        arr[i][j] = "*"
+                        arr[i][j] = char
                     }
                 }    
             }  
@@ -50,8 +50,8 @@ const drawChessboard = function(length, width){
     module.exports = {drawChessboard} 
 
 
-console.log(drawChessboard(8,8))
-console.log(drawChessboard(3,3))
+console.log(drawChessboard(8,8,"*"))
+console.log(drawChessboard(3,3, "*"))
 
 console.log(drawChessboard())
 /* console.log(drawChessboard(8))
